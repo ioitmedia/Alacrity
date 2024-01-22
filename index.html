@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>alacrity-2024-schedule|</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/logo.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+
+    <meta name="author" content="Chandula Janith" />
+    <meta
+      name="description"
+      content="Chandula's (RedEdge967) personal website created with glassmorphism UI"
+    />
+    <meta
+      name="keywords"
+      content="Developer, Portfolio, HTML, CSS, JS, GlassMorphic, Glassmorphic, GlassMorphism, Glassmorphism, UI"
+    />
+
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="canonical" href="https://rededge.vercel.app" />
+
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script defer src="./assets/js/all.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <script src="./assets/js/repo-card.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Animation-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <div id="progress">
+      <span id="progress-value"></span>
+    </div> -->
+
+    <section>
+      <div class="container">
+        <div id="top" class="page-scroll"></div>
+        <!-- Navbar -->
+        <header>
+      
+          <a href="#top" class="logo">Alacrity 2024</a>
+        
+          <ul>
+            <li><a class="#cultural" href="#top" id="home-btn">Cultural</a></li>
+            <li><a href="#sports" class="page" id="about-btn">Sports</a></li>
+            <li><a href="#tech" class="page" id="project-btn">Technical</a></li>
+            <li>
+              <a href="#contact" class="enabledisable page" id="contact-btn"
+                >Contact</a
+              >
+            </li>
+          </ul> 
+        </header>
+
+        <!-- Main Content -->
+        <div class="content">
+          <div >
+          </div>
+          <div class="img">
+            
+            <img src="ala.png" alt="Hello There!!" data-aos="fade-up-right" data-aos-duration="1000"/>
+      
+          </div>
+        </div>
+        
+
+
+        <!-- 4th Section -->
+      
+        <h2
+          id="cultural"
+          class="mob-h2 page-scroll"
+          style="font-size: 56px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-cyan">Cultural events</span>
+        </h2>
+        <img src="cultural-modified.png" alt="Hello There!!" data-aos="fade-up-right" data-aos-duration="1000"/>
+        <h2
+          id="sports"
+          class="mob-h2 page-scroll"
+          style="font-size: 56px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-cyan">Sports events</span>
+        </h2>
+        <img src="sports-modified.png" alt="Hello There!!" data-aos="fade-up-right" data-aos-duration="1000"/>
+        <h2
+          id="tech"
+          class="mob-h2 page-scroll"
+          style="font-size: 56px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-cyan">Technical events</span>
+        </h2>
+        <img src="tech-removebg-preview.png" alt="Hello There!!" data-aos="fade-up-right" data-aos-duration="1000"/>
+
+
+
+    </section>
+
+
+
+    <div class="button-top-div" id="myDIV">
+      <a id="button-top" href="#top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Page Scroll Percentage -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Page Scroll Up On Click -->
+    <script>
+      //scroller fixed
+      var scrolBtn = document.querySelector("#myDIV");
+      window.addEventListener("scroll", function () {
+        let offset;
+        offset = window.pageYOffset;
+        if (offset > 300) {
+          scrolBtn.style.display = "block";
+        }
+        if (offset < 300) {
+          scrolBtn.style.display = "none";
+        }
+      });
+
+      //remove that #s in the link
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
